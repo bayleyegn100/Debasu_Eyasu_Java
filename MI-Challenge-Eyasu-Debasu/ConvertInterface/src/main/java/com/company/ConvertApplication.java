@@ -14,6 +14,7 @@ public class ConvertApplication {
         if (num < 0 || num > 7) {
             System.out.println("Enter an integer from 1 to 7.");
             num = Integer.parseInt(scanner.nextLine());
+
         } else {
             System.out.println(ifConverter.convertDay(num));
         }
