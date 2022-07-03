@@ -30,9 +30,11 @@ public class App {
         warrior.setStamina(100);
         warrior.setShieldStrength(78);
 
-        if(constable.getStrength() > farmer.getStrength() && warrior.getStrength() > farmer.getStrength()){
-            System.out.println();
-        }
+     farmer.attackAnotherCharacter(constable, warrior);
+     constable.attackAnotherCharacter(warrior, farmer);
+     warrior.attackAnotherCharacter(constable, farmer);
+
+
 
     }
 }

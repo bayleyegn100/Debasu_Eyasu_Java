@@ -7,9 +7,11 @@ public class Farmer extends Character {
 
     public void attackAnotherCharacter(Constabl constable, Warrior warrior) {
         if(constable.getAttackPower() > this.getAttackPower() && warrior.getAttackPower() < this.getAttackPower()){
+            System.out.println("Let's increase our attack power and stamina to over come our enemies.");
             attackPower++;
             stamina++;
-        } else if(constable.getSpeed() > this.getSpeed() && warrior.getSpeed() < this.getSpeed()){
+        } else {
+            System.out.println(this.name + ", From farmers say: as per our plan We did it! We bit our enemies with out demanding additional strength and attack power.");
             strength++;
             attackPower++;
         }

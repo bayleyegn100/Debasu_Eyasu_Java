@@ -5,7 +5,7 @@ public class Warrior extends Character {
 
     public void attackAnotherCharacter(Constabl constable, Farmer farmer) {
         if(constable.getAttackPower() > this.getAttackPower() || farmer.getAttackPower() > this.getAttackPower()){
-            System.out.println(this.name + " To over come our enemies we should have to increase our shield strength, speed and stamina.");
+            System.out.println(this.name + ", from warriors say: To over come our enemies we should have to increase our shield strength, speed and stamina.");
             shieldStrength++;
             stamina++;
             speed--;
