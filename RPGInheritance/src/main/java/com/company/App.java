@@ -2,9 +2,9 @@ package com.company;
 
 public class App {
     public static void main(String[] args) {
-        Character farmer = new Farmer();
-        Character constable = new Constabl();
-        Character warrior = new Warrior();
+        Farmer farmer = new Farmer();
+        Constabl constable = new Constabl();
+        Warrior warrior = new Warrior();
 
         farmer.setName("Frank");
         farmer.setStrength(75);
@@ -19,6 +19,7 @@ public class App {
         constable.setSpeed(20);
         constable.setAttackPower(5);
         constable.setStamina(60);
+        constable.setJurisdiction("Inspector");
 
 
         warrior.setName("Elis");
@@ -27,6 +28,11 @@ public class App {
         warrior.setSpeed(50);
         warrior.setAttackPower(10);
         warrior.setStamina(100);
+        warrior.setShieldStrength(78);
+
+        if(constable.getStrength() > farmer.getStrength() && warrior.getStrength() > farmer.getStrength()){
+            System.out.println();
+        }
 
     }
 }

@@ -15,8 +15,5 @@ public class Constabl extends Character {
 
     }
 
-    @Override
-    public void attackAnotherCharacter() {
-        super.attackAnotherCharacter();
-    }
+
 }

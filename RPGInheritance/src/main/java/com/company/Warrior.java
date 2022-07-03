@@ -11,8 +11,5 @@ public class Warrior extends Character {
         this.shieldStrength = shieldStrength;
     }
 
-    @Override
-    public void attackAnotherCharacter() {
 
-    }
 }

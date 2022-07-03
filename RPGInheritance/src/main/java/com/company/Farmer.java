@@ -4,9 +4,11 @@ public class Farmer extends Character {
     private boolean harvesting;
     private  boolean plowing;
 
-    @Override
-    public void attackAnotherCharacter() {
-        System.out.println();
+
+    public void attackAnotherCharacter(Constabl constable, Warrior warrior) {
+        if(constable.getSpeed() > this.getSpeed() && warrior.getSpeed() < this.getSpeed()){
+
+        }
     }
 
     public boolean isHarvesting() {
