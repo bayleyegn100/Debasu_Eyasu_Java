@@ -6,8 +6,12 @@ public class Farmer extends Character {
 
 
     public void attackAnotherCharacter(Constabl constable, Warrior warrior) {
-        if(constable.getSpeed() > this.getSpeed() && warrior.getSpeed() < this.getSpeed()){
-
+        if(constable.getAttackPower() > this.getAttackPower() && warrior.getAttackPower() < this.getAttackPower()){
+            attackPower++;
+            stamina++;
+        } else if(constable.getSpeed() > this.getSpeed() && warrior.getSpeed() < this.getSpeed()){
+            strength++;
+            attackPower++;
         }
     }
 
