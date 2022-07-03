@@ -10,7 +10,7 @@ public class Warrior extends Character {
             stamina++;
             speed--;
         } else{
-            System.out.println("to bit" + constable.getName() + " and " + farmer.getName() + " we should increase our speed, strength and attack power.");
+            System.out.println(this.name + ": To bit " + constable.getName() + " and " + farmer.getName() + " we should increase our speed, strength and attack power.");
             strength++;
             attackPower++;
             speed++;

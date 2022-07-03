@@ -11,9 +11,10 @@ public class Character {
     protected  boolean arrested;
     protected boolean runing;
 
+
     public void attackAnotherCharacter(){
 
-    };
+    }
 
     public String getName() {
         return name;

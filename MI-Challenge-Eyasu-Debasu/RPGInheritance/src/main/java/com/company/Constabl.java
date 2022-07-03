@@ -5,7 +5,7 @@ public class Constabl extends Character {
 
     public void attackAnotherCharacter(Warrior warrior, Farmer farmer) {
         if(warrior.getStrength() > this.getStrength() || farmer.getStrength() > this.getStrength()){
-            System.out.println(this.name + " : To over come our enemies we need to change decrease our speed and increase stamina and attack power");
+            System.out.println(this.name + " : To over come our enemies we need to decrease our speed and increase stamina and attack power");
             stamina++;
             speed--;
         } else{
@@ -17,6 +17,11 @@ public class Constabl extends Character {
         }
     }
 
+    public void arrestAnotherCharacter(Farmer farmer, Warrior warrior){
+        System.out.println(this.jurisdiction + " " + this.name + ", ordered " + farmer.getName() + " and " + warrior.getName() + " to get arrested.");
+
+    }
+
     public String getJurisdiction() {
         return jurisdiction;
     }
@@ -24,10 +29,5 @@ public class Constabl extends Character {
     public void setJurisdiction(String jurisdiction) {
         this.jurisdiction = jurisdiction;
     }
-
-    public void arrestAnotherCharacter(){
-
-    }
-
 
 }

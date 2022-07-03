@@ -30,10 +30,11 @@ public class App {
         warrior.setStamina(100);
         warrior.setShieldStrength(78);
 
-     farmer.attackAnotherCharacter(constable, warrior);
-     constable.attackAnotherCharacter(warrior, farmer);
-     warrior.attackAnotherCharacter(constable, farmer);
-
+        farmer.attackAnotherCharacter(constable, warrior);
+        constable.attackAnotherCharacter(warrior, farmer);
+        warrior.attackAnotherCharacter(constable, farmer);
+        System.out.println("===============================");
+        constable.arrestAnotherCharacter(farmer, warrior);
 
 
     }
