@@ -17,7 +17,7 @@ public class Operators {
         return  pro;
     }
     public int divide(int x, int y){
-        int res = x + y;
+        int res = x / y;
         System.out.println(x + " / " + y + " = " + res);
         return  res;
     }
@@ -37,7 +37,7 @@ public class Operators {
         return  pro;
     }
     public double divide(double x, double y){
-        double res = x + y;
+        double res = x / y;
         System.out.println(x + " / " + y + " = " + res);
         return  res;
     }
