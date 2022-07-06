@@ -1,15 +1,15 @@
 package com.company.factory;
 
 public class IceCream {
-    public int milk;
-    public int time;
-    public boolean isFlavored;
-    public int temp;
-    public boolean isHomogenized;
-    public boolean hasNecessaryEquipments;
-    public int ammonia;
-    public int customerSatsfaction;
-    public int profit;
+    private int milk;
+    private int time;
+    private boolean isFlavored;
+    private int temp;
+    private boolean isHomogenized;
+    private boolean hasNecessaryEquipments;
+    private int ammonia;
+    private int customerSatsfaction;
+    private int profit;
 
     public void blendingTheMixtures(){
         if(this.milk < 600 || isFlavored || hasNecessaryEquipments){
