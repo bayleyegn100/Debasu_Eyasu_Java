@@ -1,15 +1,16 @@
 package com.company.factory;
 
 public class IceCream {
-    private int milk;
+    //values are set to check the test.
+    private int milk = 700;
     private int time;
     private boolean isFlavored;
-    private int temp;
+    private int temp = 400;
     private boolean isHomogenized;
     private boolean hasNecessaryEquipments;
     private int ammonia;
-    private int customerSatsfaction;
-    private int profit;
+    private int customerSatsfaction = 4;
+    private int profit = 27999;
 
     public void blendingTheMixtures(){
         if(this.milk < 600 || isFlavored || hasNecessaryEquipments){
@@ -21,19 +22,25 @@ public class IceCream {
 
     public void pasteurizingToKillBacterias(){
         if(this.temp < 350 || hasNecessaryEquipments){
-            System.out.println("Necessary equipments are not complete. " + this.temp + " degree Faranite is not enough for pasteurization. Make sure required equipments are ready and tempreture is set at 360 degree fanranite to start parteurize it.");
+            System.out.println("Necessary equipments are not complete. 350 degree Faranite is not enough for pasteurization. Make sure required equipments are ready and tempreture is set at 360 degree fanranite to start parteurize it.");
         } else{
             System.out.println("Homoginizing started. ");
             ammonia++;
-            System.out.println("To softened the Ice-Cream use a tempreture less that " + this.temp + " degree faranite.");
+            System.out.println("To softened the Ice-Cream use a tempreture less that 350 degree faranite.");
         }
 
     }
 
     public void feedBackAndResults(){
-        customerSatsfaction++;
-        profit++;
-
+        if(this.customerSatsfaction < 4){
+            System.out.println("Customers satisfaction is below our exceptions. We have to work hard to increase their satsfaction with us!!");
+            customerSatsfaction--;
+            profit--;
+        } else {
+            System.out.println("Keep it up!! Customers feedback shows they are satisfied with our service and products.");
+            customerSatsfaction++;
+            profit++;
+        }
     }
 
     public boolean isFlavored() {
