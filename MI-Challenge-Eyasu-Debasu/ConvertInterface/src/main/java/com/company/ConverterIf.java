@@ -3,7 +3,6 @@ package com.company;
 public class ConverterIf implements Converter {
     @Override
     public String convertMonth(int monthNumber) {
-//        String[] alphabets = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "g", "h", "i", "J", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"};
         if (monthNumber < 1 || monthNumber > 12 ) {
             return "The number you entered is invalid.";
         }

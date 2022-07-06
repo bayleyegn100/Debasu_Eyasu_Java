@@ -47,8 +47,10 @@ public class ConverterSwitch implements Converter {
                 return "Thursday";
             case 6:
                 return "Friday";
-            default:
+            case 7:
                 return "Saturday";
+            default:
+                return "The number you entered is invalid.";
         }
     }
 }
