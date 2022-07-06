@@ -4,9 +4,9 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class IceCream {
-    private int temp;
-    private String[] flavor= {"Strawberry", "Chocolate", "Buttered Pecan"};
-    private int customerSatsfaction;
+    private int temp= 35;
+    private boolean flavor;
+    private int customerSatsfaction =6;
     private boolean isSupportedByImage;
 
     public void keepColdTheIceCream(){
@@ -20,19 +20,23 @@ public class IceCream {
         }
     }
     public void haveEnoughFlavors(){
-        System.out.println(this.flavor + " are available to the users");
+        System.out.println("Strawberry, Chocolate and Buttered Pecan flavors  are available to the users");
         System.out.println("Have a look on those posted pictures and come back with your choice.");
     }
 
     public void customerSatisfactions(){
-        Scanner myScanner = new Scanner(System.in);
-        System.out.println("We do have " + this.flavor + " flavored cold ice-cream.");
-        System.out.println("If your favorite is not included on the list let us know we will work on it for next time.");
-        String customerDemand = myScanner.nextLine();
-        System.out.println("You have entered " + customerDemand + " flavor. Sorry for not fulfilling your demand. We will get you next time with your favorite.");
-        customerSatsfaction--;
+        if(this.customerSatsfaction < 3){
+            Scanner myScanner = new Scanner(System.in);
+            System.out.println("We do have Strawberry, Chocolate, Buttered Pecan flavored cold ice-cream.");
+            System.out.println("If your favorite is not included on the list let us know we will work on it for next time.");
+            String customerDemand = myScanner.nextLine();
+            System.out.println("You have entered " + customerDemand + " flavor. Sorry for not fulfilling your demand. We will get you next time with your favorite.");
+            customerSatsfaction--;
+        } else {
+            System.out.println("Customers are satisfied with our service. Keep it up!!");
+            customerSatsfaction++;
+        }
     }
-
 
     public int getTemp() {
         return temp;
@@ -42,11 +46,11 @@ public class IceCream {
         this.temp = temp;
     }
 
-    public String[] getFlavor() {
+    public boolean isFlavor() {
         return flavor;
     }
 
-    public void setFlavor(String[] flavor) {
+    public void setFlavor(boolean flavor) {
         this.flavor = flavor;
     }
 
@@ -70,7 +74,7 @@ public class IceCream {
     public String toString() {
         return "IceCream{" +
                 "temp=" + temp +
-                ", flavor=" + Arrays.toString(flavor) +
+                ", flavor=" + flavor +
                 ", customerSatsfaction=" + customerSatsfaction +
                 ", isSupportedByImage=" + isSupportedByImage +
                 '}';
