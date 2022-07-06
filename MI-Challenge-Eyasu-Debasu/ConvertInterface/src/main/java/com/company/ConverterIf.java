@@ -38,7 +38,7 @@ public class ConverterIf implements Converter {
         if (dayNumber < 1 || dayNumber > 7) {
             return "The number you entered is invalid.";
         } else if (dayNumber == 1) {
-            return "sunday";
+            return "Sunday";
         } else if (dayNumber == 2) {
             return "Monday";
         } else if (dayNumber == 3) {
@@ -48,7 +48,7 @@ public class ConverterIf implements Converter {
         } else if (dayNumber == 5) {
             return "Thursday";
         } else if (dayNumber == 6) {
-            return "friday";
+            return "Friday";
         } else {
             return "Saturday";
         }

@@ -24,8 +24,10 @@ public class ConverterSwitch implements Converter {
             case 9:
                 return "September";
             case 10:
-                return "November";
+                return "October";
             case 11:
+                return "November";
+            case 12:
                 return "December";
             default:
                 return "The number you entered is invalid.";
