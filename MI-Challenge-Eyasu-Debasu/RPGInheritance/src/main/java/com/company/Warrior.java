@@ -1,7 +1,7 @@
 package com.company;
 
 public class Warrior extends Character {
-    private int shieldStrength;
+    private int shieldStrength = 100;
 
     public void attackAnotherCharacter(Constabl constable, Farmer farmer) {
         if(constable.getAttackPower() > this.getAttackPower() || farmer.getAttackPower() > this.getAttackPower()){

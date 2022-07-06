@@ -3,11 +3,11 @@ package com.company;
 public class Character {
 
     protected String name;
-    protected int strength;
-    protected int health;
-    protected int stamina;
-    protected  int speed;
-    protected  int attackPower;
+    protected int strength = 60;
+    protected int health = 100;
+    protected int stamina = 60;
+    protected  int speed = 20;
+    protected  int attackPower = 1;
     protected  boolean arrested;
     protected boolean runing;
 

@@ -1,7 +1,7 @@
 package com.company;
 
 public class Constabl extends Character {
-    private String jurisdiction;
+    private String jurisdiction = "Inspector";
 
     public void attackAnotherCharacter(Warrior warrior, Farmer farmer) {
         if(warrior.getStrength() > this.getStrength() || farmer.getStrength() > this.getStrength()){
